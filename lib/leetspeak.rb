@@ -11,6 +11,8 @@ class String
         word.push("1")
       elsif ((letter === "S") | (letter === "s")) & !(word[0])
         word.push(letter)
+      elsif ((letter === "S") | (letter === "s")) & (word[-1] === " ")
+        word.push(letter)
       elsif (letter === "S") | (letter === "s")
         word.push("z")
       else
